@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding view;
     private String[] cursos;
     private List<Cursos> list = new ArrayList<>();
+    private String curso = "";
 
     private interface Lista {
 
@@ -139,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
-                System.out.println("CURSOS: " + cursos[i]);
+                curso = cursos[i];
 
             }
 
