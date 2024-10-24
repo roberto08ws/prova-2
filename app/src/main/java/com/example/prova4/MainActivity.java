@@ -11,6 +11,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.prova4.databinding.ActivityMainBinding;
 
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding view;
@@ -26,5 +29,8 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://10.0.2.2:3000").addConverterFactory(GsonConverterFactory.create()).build();
+
     }
 }
