@@ -2,7 +2,9 @@ package com.example.prova4;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -21,6 +23,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
@@ -31,6 +35,7 @@ public class TelaRanking extends AppCompatActivity {
     private ActivityTelaRankingBinding view;
 
     private List<Ranking> list = new ArrayList<>();
+    private int id = 0;
 
     private interface Lista {
 
@@ -61,6 +66,33 @@ public class TelaRanking extends AppCompatActivity {
         view.viewHarmonico.setVisibility(View.GONE);
 
         Retrofit retrofit = new Retrofit.Builder().baseUrl("http://10.0.2.2:3000").addConverterFactory(GsonConverterFactory.create()).build();
+
+        Lista lista = retrofit.create(Lista.class);
+
+        SharedPreferences cache = getSharedPreferences("cadastro", MODE_PRIVATE);
+
+        id = cache.getInt("id", 0);
+
+        lista.lista(id).enqueue(new Callback<List<Ranking>>() {
+            @Override
+            public void onResponse(Call<List<Ranking>> call, Response<List<Ranking>> response) {
+
+                if (response.isSuccessful()) {
+
+                    list = response.body();
+
+
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<List<Ranking>> call, Throwable throwable) {
+
+                Log.e("ERROR", "Error: " + throwable.getMessage());
+
+            }
+        });
 
         view.imgMenu.setOnClickListener(e -> {
 
