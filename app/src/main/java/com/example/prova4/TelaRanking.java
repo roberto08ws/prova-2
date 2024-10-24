@@ -17,9 +17,16 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.prova4.databinding.ActivityTelaRankingBinding;
 
+import retrofit2.Call;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.GET;
+
 public class TelaRanking extends AppCompatActivity {
 
     private ActivityTelaRankingBinding view;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +48,8 @@ public class TelaRanking extends AppCompatActivity {
 
         view.viewHarmonico.setAnimation(animation2);
         view.viewHarmonico.setVisibility(View.GONE);
+
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://10.0.2.2:3000").addConverterFactory(GsonConverterFactory.create()).build();
 
         view.imgMenu.setOnClickListener(e -> {
 
