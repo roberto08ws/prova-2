@@ -3,6 +3,7 @@ package com.example.prova4;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -78,6 +79,54 @@ public class MainActivity extends AppCompatActivity {
 
 
             }
+        });
+
+        view.btnCadastrar.setOnClickListener(e -> {
+
+            String nome = view.edtNome.getText().toString().trim();
+            String cidade = view.edtCidade.getText().toString().trim();
+            String email = view.edtEmail.getText().toString().trim();
+            String senha = view.edtSenha.getText().toString().trim();
+            String confirmar = view.edtConfirmar.getText().toString().trim();
+
+            if (nome.isEmpty() || cidade.isEmpty() || email.isEmpty() || senha.isEmpty() || confirmar.isEmpty()) {
+
+                String faltantes = "";
+
+                if (nome.isEmpty()) {
+
+                    faltantes = faltantes + "nome completo,";
+
+                }
+
+                if (cidade.isEmpty()) {
+
+                    faltantes = faltantes + "cidade,";
+
+                }
+
+                if (email.isEmpty()) {
+
+                    faltantes = faltantes + "e-mail,";
+
+                }
+
+                if (senha.isEmpty()) {
+
+                    faltantes = faltantes + "senha,";
+
+                }
+
+                if (confirmar.isEmpty()) {
+
+                    faltantes = faltantes + "confirmar senha.";
+
+                }
+
+                Toast.makeText(this, "Campos faltantes: " + faltantes, Toast.LENGTH_SHORT).show();
+
+            }
+
         });
 
     }
