@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -60,6 +61,11 @@ public class TelaPerfil extends AppCompatActivity {
             view.viewFundo.setAnimation(animation);
             view.viewFundo.setVisibility(View.VISIBLE);
 
+            Animation animation1 = AnimationUtils.loadAnimation(TelaPerfil.this, R.anim.anim_in);
+            animation1.setDuration(400);
+
+            view.viewMenu.setAnimation(animation1);
+            view.viewMenu.setVisibility(View.VISIBLE);
 
 
         });
