@@ -93,5 +93,12 @@ public class TelaPerfil extends AppCompatActivity {
 
         });
 
+        view.btnAtualizar.setOnClickListener(e -> {
+
+            String novoNome = view.edtNome.getText().toString().trim();
+            String novaCidade = view.edtCidade.getText().toString().trim();
+
+        });
+
     }
 }
