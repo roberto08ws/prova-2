@@ -2,6 +2,7 @@ package com.example.prova4;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -56,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
 
                 list = response.body();
                 cursos = new String[list.size()];
+
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_spinner_item, cursos);
 
             }
 
