@@ -1,6 +1,7 @@
 package com.example.prova4;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -158,7 +159,10 @@ public class MainActivity extends AppCompatActivity {
                             editor.putString("curso", usuario.getCurso());
                             editor.apply();
 
+                            Toast.makeText(MainActivity.this, "Cadastro realizado com sucesso!", Toast.LENGTH_SHORT).show();
 
+                            startActivity(new Intent(MainActivity.this, TelaPerfil.class));
+                            finish();
 
                         } else {
 
