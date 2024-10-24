@@ -2,6 +2,10 @@ package com.example.prova4;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,6 +34,49 @@ public class TelaRanking extends AppCompatActivity {
 
         view.recyclerView.setLayoutManager(new LinearLayoutManager(TelaRanking.this));
         view.recyclerView.setHasFixedSize(true);
+
+        view.imgMenu.setOnClickListener(e -> {
+
+            view.imgMenu.setEnabled(false);
+            view.viewFundo.setEnabled(true);
+
+            Animation animation = new AlphaAnimation(0, 1);
+            animation.setDuration(400);
+
+            view.viewFundo.setAnimation(animation);
+            view.viewFundo.setVisibility(View.VISIBLE);
+
+            Animation animation1 = AnimationUtils.loadAnimation(TelaPerfil.this, R.anim.anim_in);
+            animation1.setDuration(400);
+
+            view.viewMenu.setAnimation(animation1);
+            view.viewMenu.setVisibility(View.VISIBLE);
+
+
+        });
+
+        view.viewFundo.setOnClickListener(e -> {
+
+            view.imgMenu.setEnabled(true);
+            view.viewFundo.setEnabled(false);
+
+            Animation animation = new AlphaAnimation(1, 0);
+            animation.setDuration(400);
+
+            view.viewFundo.setAnimation(animation);
+            view.viewFundo.setVisibility(View.GONE);
+
+            Animation animation1 = AnimationUtils.loadAnimation(TelaPerfil.this, R.anim.anim_out);
+            animation1.setDuration(400);
+
+            view.viewMenu.setAnimation(animation1);
+            view.viewMenu.setVisibility(View.GONE);
+
+        });
+
+        view.viewMenu.setOnClickListener(e -> {
+
+        });
 
     }
 }
