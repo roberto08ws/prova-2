@@ -135,11 +135,18 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        view.comboBox.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        view.comboBox.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
-                System.out.println("CURSO: " + cursos[i]);
+                System.out.println("CURSOS: " + cursos[i]);
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+
 
             }
         });
