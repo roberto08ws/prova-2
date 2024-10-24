@@ -1,5 +1,6 @@
 package com.example.prova4;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -151,6 +152,13 @@ public class TelaPerfil extends AppCompatActivity {
                 });
 
             }
+
+        });
+
+        view.btnLogout.setOnClickListener(e -> {
+
+            startActivity(new Intent(TelaPerfil.this, MainActivity.class));
+            finish();
 
         });
 
