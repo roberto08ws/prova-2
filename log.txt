@@ -1,0 +1,323 @@
+commit 84ebf89927fa27246488358f77e8ad2928440ce0
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 11:00:22 2024 -0300
+
+    Shape do icon
+
+commit e81ae9f4f27605d29caf18f188900ebb88b78337
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:49:03 2024 -0300
+
+    ComeçÃo do decodificador de imagem
+
+commit 0af8a660d42f6d6606c4188ae139bcb538923c69
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:43:04 2024 -0300
+
+    Função trocar de tela ao clicar nos botões do menu
+
+commit e39a87ff8b70ce0c61e788cc062c35b9a3ecc1f4
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:41:37 2024 -0300
+
+    Listagem do ranking passado para o recyclerVuew
+
+commit f37b92dde78390d50b59c50d0ead84c5be9cfa4b
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:40:54 2024 -0300
+
+    Class AdapterList
+
+commit b47bbca93d866b236dd591d51aad7bdb5d87b0b1
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:37:45 2024 -0300
+
+    Listagem do ranking
+
+commit c4acf4cec23c81ed2d4bad03f7f1cd7cc896dd97
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:36:12 2024 -0300
+
+    Interface Lista - tela ranking
+
+commit 7395a6fe0be6d55c2ee946a7ca214e9dff43515f
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:35:13 2024 -0300
+
+    Class ranking
+
+commit 465fe020359c849b05fbde961ea100c9ec165ad6
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:32:47 2024 -0300
+
+    Função log out na tela Ranking
+
+commit 5559522f8ba5e71260d8d0356eb1ae66e6dc843c
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:32:05 2024 -0300
+
+    AnAnimação de troca de tela na telaRanking
+
+commit 9568beb9153ad0291f3ce472f1bc2ce640d8c96e
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:31:34 2024 -0300
+
+    Correação do id na tela ranking da imgMenu
+
+commit e51dfaaec3e470ff6c264d7dee134acab3ecb90c
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:30:45 2024 -0300
+
+    AnimaçÃões de entrada e saída para a viewFundo e viewMenu
+
+commit 9e276e29f8ee22f18556679a9e12d0acaebfcfb0
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:30:02 2024 -0300
+
+    Setando o layout no recyclerView
+
+commit 5cc1ac1302c936ea322593283a0ffc751fcdd018
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:28:54 2024 -0300
+
+    Correção do nome do id txtPontos
+
+commit a2a1be4a1a6825dc4b4145e13d8abfc664dac222
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:28:22 2024 -0300
+
+    Class item_list criada e shape do layout item_lit
+
+commit 42fee79dbd787bd24e64d1e42f5e49474d8df843
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:24:30 2024 -0300
+
+    Base design tela ranking
+
+commit c2a3159a802c520d6a62214f0671ac16b044b891
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:19:04 2024 -0300
+
+    Atualização das informações do usuário por cache
+
+commit 2743db6b21377a7213651f46c2a8ebdd4f5c4a8a
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:17:55 2024 -0300
+
+    Função Log out feita para voltar a tela de cadastro
+
+commit fbedee64392179c3a3c51d0bf35f7305aa0561c8
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:17:07 2024 -0300
+
+    Validação de ninformações não alteradas
+
+commit be3a1d1fb5221a0355617dbf686c62b2a8aeb995
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:15:45 2024 -0300
+
+    Função atualizar
+
+commit 44f75c831dcce0e233dde4329748c7381e34f8fd
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:13:45 2024 -0300
+
+    Interface atualiza e correção do nome da class BodyCadastro para BodyAtualiza
+
+commit 63fbcb40150209c26f27b83f203ba7f8846f8436
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:11:19 2024 -0300
+
+    Class BodyCadastro
+
+commit eb4a603ed08f97479a7419843cf0097dc0116b68
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:10:06 2024 -0300
+
+    Início da função de atualizar
+
+commit e7ccde9baaf93e8143f951a8755157dc5a3689d9
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:09:05 2024 -0300
+
+    Animação de saída passada para a viewMenu e viewFundo
+
+commit b45d85cf83585c9f1a2f847b59b55b643926ab11
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:08:16 2024 -0300
+
+    aAnimação de entrada passada para a viewMenu
+
+commit 49c447fea9f0f2aac91e778d0d5d4ff599d6cb5b
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:07:18 2024 -0300
+
+    Animclass anim_out criada
+
+commit 90db29f38afa93685135d58ba30320cde05706ee
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:06:46 2024 -0300
+
+    Animclass anim_in criada
+
+commit efc258b30cbcc1ce0c95f36c75e5e3584317639e
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:05:57 2024 -0300
+
+    Animação de entrada passada para a viewFundo e viewHarmonico
+
+commit 4c2d4eddb5c565b19d939f82fe8dac539ba27099
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 10:03:41 2024 -0300
+
+    Informações do usuário passadas para os campos
+
+commit f3fd6e76b135c3cd78cacb71e6ddb7d6a2b47786
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:59:48 2024 -0300
+
+    Design base tela perfil
+
+commit ac7ee0ff91f04e5bc551dcd55326447b7a134338
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:47:46 2024 -0300
+
+    Troca de tela ao finalizar cadastro
+
+commit a648bcfa9aefc80cd6efcf672d6231ad3d20c907
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:46:30 2024 -0300
+
+    InformÃmações do usuário sendo salvas em cache
+
+commit 04063fe1c2f558796dc55fe0d1f14fcdc7408466
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:44:22 2024 -0300
+
+    Função cadastrar usuário
+
+commit 10558daf57286f8d02cfa48ff0f765be9f9e1d35
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:42:38 2024 -0300
+
+    Interface cadastro
+
+commit 82ab8e17bdf102841ce633aa8e9d2a83e2ce404b
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:42:02 2024 -0300
+
+    Class ResponseCadastro
+
+commit 44ec17ead83a777520295c4d4ea23e21db58fd44
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:40:18 2024 -0300
+
+    Variável curso
+
+commit 1a5bd24ca1ab9e1df8727fb1049ec391e2ca79fd
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:39:39 2024 -0300
+
+    Correção do recebimento do valor do comboBox
+
+commit 755a8dea0e6d2fa8252c997ede13b8bc0c7f5f96
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:36:19 2024 -0300
+
+    Permissão do uso de url http
+
+commit a69281cb42e86ff893025b68f0c67f2614401361
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:36:04 2024 -0300
+
+    Permissão de internet
+
+commit 2c9c9f3cd23725579b7b02afbfdc57346465c122
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:35:44 2024 -0300
+
+    Verificação do curso selecionado
+
+commit 56e037552bf4957b584863f6b9277bef502d90a3
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:33:58 2024 -0300
+
+    Class Usuarios
+
+commit 30419378cc6dc8f379b656fe84b56b50eb36bbc1
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:32:32 2024 -0300
+
+    Validação dos campos faltantes
+
+commit 0d75ff77d29dc6cf70f62d03a1e90448db205129
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:29:05 2024 -0300
+
+    Adapter sendo passado para a comboBox
+
+commit e769c2779f794e5386f97b9f6b0134b853ac1dcf
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:28:23 2024 -0300
+
+    Passando informações para o adapter e correção na class Cursos
+
+commit bce69d4ac4c8c709658106c4f6f3ae0c78836cf7
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:27:18 2024 -0300
+
+    Criando adapter do comboBox
+
+commit a9a18cbb4e7da8d782a3b6a288cab33574eece30
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:26:09 2024 -0300
+
+    Listando todos os cursos para o comboBox
+
+commit 8cc49599dc18e69ce2c195323565ff6a3b025774
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:24:50 2024 -0300
+
+    Interface Lista
+
+commit 36cd473380d2d26b9e768e651333e5fab76fa767
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:24:25 2024 -0300
+
+    Class Cursos
+
+commit a247388d514e8a5652ccdb488adb2f139d281501
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:22:44 2024 -0300
+
+    Variável retrofit
+
+commit 093e39c706d314667715f877d6048664e986a3df
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:21:56 2024 -0300
+
+    Variável view criada
+
+commit c7a47321a5e358bd4a3c37afde76f3f2dbb6fe0a
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:21:23 2024 -0300
+
+    Design bbase da tela de cadastro
+
+commit d791f2c06581dbe548d5be59bf0403c4f50302cb
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:13:44 2024 -0300
+
+    Paleta de cores adicionadas
+
+commit 5fc634bedda9b8f9a6d03a87c0310ba614d18a8d
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:12:06 2024 -0300
+
+    Bibliotecas adicionadas: retrofit, converter-gson
+
+commit d493c3768fcbc71d654c6a2afeed92313ebc1a1c
+Author: roberto08ws <roberto.henrique.08.ws@gmail.com>
+Date:   Thu Oct 24 09:10:12 2024 -0300
+
+    Início da aplicação

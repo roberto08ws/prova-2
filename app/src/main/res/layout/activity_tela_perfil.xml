@@ -84,6 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="432dp"
         android:ems="10"
+        android:background="@drawable/shape_edt"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,6 +99,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
+        android:background="@drawable/shape_edt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -111,6 +113,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
+        android:background="@drawable/shape_edt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -118,22 +121,28 @@
         app:layout_constraintTop_toBottomOf="@+id/edtCidade"
         app:layout_constraintVertical_bias="0.208" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:text="Mudar Senha"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtCurso"
         app:layout_constraintVertical_bias="0.288" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnAtualizar"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:text="Atualizar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
