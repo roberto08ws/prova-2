@@ -17,16 +17,27 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.prova4.databinding.ActivityTelaRankingBinding;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 
 public class TelaRanking extends AppCompatActivity {
 
     private ActivityTelaRankingBinding view;
 
+    private List<Ranking> list = new ArrayList<>();
 
+    private interface Lista {
+
+        @GET("/ranking-top10/{id}")
+        Call<List<Ranking>> lista(@Path("id") int id);
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
