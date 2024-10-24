@@ -1,6 +1,7 @@
 package com.example.prova4;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
@@ -81,6 +82,13 @@ public class TelaRanking extends AppCompatActivity {
         });
 
         view.viewMenu.setOnClickListener(e -> {
+
+        });
+
+        view.btnLogout.setOnClickListener(e -> {
+
+            startActivity(new Intent(TelaRanking.this, MainActivity.class));
+            finish();
 
         });
 
