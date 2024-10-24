@@ -164,7 +164,7 @@
         android:layout_height="match_parent"
         app:layout_constraintWidth_percent="0.7"
         android:elevation="5dp"
-        android:visibility="gone"
+        android:visibility="visible"
         android:background="@color/white">
 
 

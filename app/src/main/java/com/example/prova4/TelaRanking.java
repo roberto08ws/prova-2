@@ -146,5 +146,12 @@ public class TelaRanking extends AppCompatActivity {
 
         });
 
+        view.btnPerfil.setOnClickListener(e -> {
+
+            startActivity(new Intent(TelaRanking.this, TelaPerfil.class));
+            finish();
+
+        });
+
     }
 }
