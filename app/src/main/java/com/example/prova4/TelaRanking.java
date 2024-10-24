@@ -46,7 +46,7 @@ public class TelaRanking extends AppCompatActivity {
             view.viewFundo.setAnimation(animation);
             view.viewFundo.setVisibility(View.VISIBLE);
 
-            Animation animation1 = AnimationUtils.loadAnimation(TelaPerfil.this, R.anim.anim_in);
+            Animation animation1 = AnimationUtils.loadAnimation(TelaRanking.this, R.anim.anim_in);
             animation1.setDuration(400);
 
             view.viewMenu.setAnimation(animation1);
@@ -66,7 +66,7 @@ public class TelaRanking extends AppCompatActivity {
             view.viewFundo.setAnimation(animation);
             view.viewFundo.setVisibility(View.GONE);
 
-            Animation animation1 = AnimationUtils.loadAnimation(TelaPerfil.this, R.anim.anim_out);
+            Animation animation1 = AnimationUtils.loadAnimation(TelaRanking.this, R.anim.anim_out);
             animation1.setDuration(400);
 
             view.viewMenu.setAnimation(animation1);
