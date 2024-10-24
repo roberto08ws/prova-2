@@ -70,6 +70,25 @@ public class TelaPerfil extends AppCompatActivity {
 
         });
 
+        view.viewFundo.setOnClickListener(e -> {
+
+            view.imgMenu.setEnabled(true);
+            view.viewFundo.setEnabled(false);
+
+            Animation animation = new AlphaAnimation(1, 0);
+            animation.setDuration(400);
+
+            view.viewFundo.setAnimation(animation);
+            view.viewFundo.setVisibility(View.GONE);
+
+            Animation animation1 = AnimationUtils.loadAnimation(TelaPerfil.this, R.anim.anim_out);
+            animation1.setDuration(400);
+
+            view.viewMenu.setAnimation(animation1);
+            view.viewMenu.setVisibility(View.GONE);
+
+        });
+
         view.viewMenu.setOnClickListener(e -> {
 
         });
