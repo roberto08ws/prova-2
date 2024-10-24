@@ -133,6 +133,12 @@ public class TelaPerfil extends AppCompatActivity {
 
                         if (response.isSuccessful()) {
 
+                            SharedPreferences.Editor editor = getSharedPreferences("cadastro", MODE_PRIVATE).edit();
+
+                            editor.putString("nome", novoNome);
+                            editor.putString("cidade", novaCidade);
+                            editor.apply();
+
                             Toast.makeText(TelaPerfil.this, "Informações atualizadas com sucesso!", Toast.LENGTH_SHORT).show();
 
                         } else {
