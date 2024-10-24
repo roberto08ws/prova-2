@@ -2,6 +2,7 @@ package com.example.prova4;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         Retrofit retrofit = new Retrofit.Builder().baseUrl("http://10.0.2.2:3000").addConverterFactory(GsonConverterFactory.create()).build();
 
         Lista lista = retrofit.create(Lista.class);
+        Cadastro cadastro = retrofit.create(Cadastro.class);
 
         lista.lista().enqueue(new Callback<List<Cursos>>() {
             @Override
@@ -139,7 +141,29 @@ public class MainActivity extends AppCompatActivity {
 
             } else {
 
+                cadastro.cadastra(new Usuarios(0, nome, cidade, curso, email, senha)).enqueue(new Callback<ResponseCadastro>() {
+                    @Override
+                    public void onResponse(Call<ResponseCadastro> call, Response<ResponseCadastro> response) {
 
+                        if (response.isSuccessful()) {
+
+
+
+                        } else {
+
+                            Log.e("ERROR", "Error: " + response.code());
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<ResponseCadastro> call, Throwable throwable) {
+
+                        Log.e("ERROR", "Error: " + throwable.getMessage());
+
+                    }
+                });
 
             }
 
