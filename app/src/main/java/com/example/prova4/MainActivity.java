@@ -58,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
                 list = response.body();
                 cursos = new String[list.size()];
 
+                for (int i = 0; i < list.size(); i++) {
+
+                    cursos[i] = list.get(i).getNome_curso();
+
+                }
+
                 ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_spinner_item, cursos);
 
             }
