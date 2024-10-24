@@ -35,6 +35,12 @@ public class TelaRanking extends AppCompatActivity {
         view.recyclerView.setLayoutManager(new LinearLayoutManager(TelaRanking.this));
         view.recyclerView.setHasFixedSize(true);
 
+        Animation animation2 = new AlphaAnimation(1, 0);
+        animation2.setDuration(4000);
+
+        view.viewHarmonico.setAnimation(animation2);
+        view.viewHarmonico.setVisibility(View.GONE);
+
         view.imgMenu.setOnClickListener(e -> {
 
             view.imgMenu.setEnabled(false);
