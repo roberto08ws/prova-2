@@ -1,6 +1,9 @@
 package com.example.prova4;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,8 +45,10 @@ public class AdapterList extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         TextView txtPontos = holder.itemView.findViewById(R.id.txtPontos);
 
         txtNome.setText(ranking.getAluno());
-        txtPosicao.setText(String.valueOf(posicao + "pts"));
+        txtPosicao.setText(String.valueOf(posicao + " -"));
         txtPontos.setText(String.valueOf(ranking.getPontos() + "pts"));
+
+
 
     }
 
@@ -57,6 +62,23 @@ public class AdapterList extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
         }
+    }
+
+    private Bitmap decodificar(String base) {
+
+        String[] divide = base.split(",", 2);
+
+        if (divide.length > 1) {
+
+            byte[] decodifica = Base64.decode(divide[1], divide[1].length());
+
+
+        } else {
+
+            return null;
+
+        }
+
     }
 
 }
