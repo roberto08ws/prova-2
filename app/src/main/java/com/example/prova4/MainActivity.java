@@ -66,6 +66,10 @@ public class MainActivity extends AppCompatActivity {
 
                 ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_spinner_item, cursos);
 
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+                view.comboBox.setAdapter(adapter);
+
             }
 
             @Override
