@@ -1,15 +1,15 @@
 package com.example.prova4;
 
-public class BodyCadastro {
+public class BodyAtualiza {
 
     private String nome_completo, cidade;
 
-    public BodyCadastro(String nome_completo, String cidade) {
+    public BodyAtualiza(String nome_completo, String cidade) {
         this.nome_completo = nome_completo;
         this.cidade = cidade;
     }
 
-    public BodyCadastro() {
+    public BodyAtualiza() {
     }
 
     public String getNome_completo() {

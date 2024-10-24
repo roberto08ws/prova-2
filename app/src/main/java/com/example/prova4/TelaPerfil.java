@@ -1,6 +1,5 @@
 package com.example.prova4;
 
-import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -16,9 +15,23 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.prova4.databinding.ActivityTelaPerfilBinding;
 
+import retrofit2.Call;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.Body;
+import retrofit2.http.PUT;
+import retrofit2.http.Path;
+
 public class TelaPerfil extends AppCompatActivity {
 
     private ActivityTelaPerfilBinding view;
+
+    private interface Atualiza {
+
+        @PUT("/alunos/{id}")
+        Call<ResponseCadastro> cadastra(@Path("id") int id, @Body BodyAtualiza bodyAtualiza);
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +50,8 @@ public class TelaPerfil extends AppCompatActivity {
 
         view.viewHarmonico.setAnimation(animation2);
         view.viewHarmonico.setVisibility(View.GONE);
+
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://10.0.2.2:3000").addConverterFactory(GsonConverterFactory.create()).build();
 
         SharedPreferences cache = getSharedPreferences("cadastro", MODE_PRIVATE);
 
