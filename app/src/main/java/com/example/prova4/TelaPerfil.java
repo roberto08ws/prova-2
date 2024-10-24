@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -119,29 +120,37 @@ public class TelaPerfil extends AppCompatActivity {
             String novoNome = view.edtNome.getText().toString().trim();
             String novaCidade = view.edtCidade.getText().toString().trim();
 
-            atualiza.cadastra(id, new BodyAtualiza(novoNome, novaCidade)).enqueue(new Callback<ResponseCadastro>() {
-                @Override
-                public void onResponse(Call<ResponseCadastro> call, Response<ResponseCadastro> response) {
+            if (novoNome.equals(nome) && novaCidade.equals(cidade)) {
 
-                    if (response.isSuccessful()) {
+                Toast.makeText(this, "Nenhuma alteração feita!", Toast.LENGTH_SHORT).show();
 
+            } else {
 
+                atualiza.cadastra(id, new BodyAtualiza(novoNome, novaCidade)).enqueue(new Callback<ResponseCadastro>() {
+                    @Override
+                    public void onResponse(Call<ResponseCadastro> call, Response<ResponseCadastro> response) {
 
-                    } else {
+                        if (response.isSuccessful()) {
 
-                        Log.e("ERROR", "Error: " + response.code());
+                            Toast.makeText(TelaPerfil.this, "Informações atualizadas com sucesso!", Toast.LENGTH_SHORT).show();
+
+                        } else {
+
+                            Log.e("ERROR", "Error: " + response.code());
+
+                        }
 
                     }
 
-                }
+                    @Override
+                    public void onFailure(Call<ResponseCadastro> call, Throwable throwable) {
 
-                @Override
-                public void onFailure(Call<ResponseCadastro> call, Throwable throwable) {
+                        Log.e("ERROR", "Error: "  + throwable.getMessage());
 
-                    Log.e("ERROR", "Error: "  + throwable.getMessage());
+                    }
+                });
 
-                }
-            });
+            }
 
         });
 
