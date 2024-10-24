@@ -2,6 +2,7 @@ package com.example.prova4;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -16,6 +17,8 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.prova4.databinding.ActivityTelaPerfilBinding;
 
 import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.Body;
@@ -53,8 +56,11 @@ public class TelaPerfil extends AppCompatActivity {
 
         Retrofit retrofit = new Retrofit.Builder().baseUrl("http://10.0.2.2:3000").addConverterFactory(GsonConverterFactory.create()).build();
 
+        Atualiza atualiza = retrofit.create(Atualiza.class);
+
         SharedPreferences cache = getSharedPreferences("cadastro", MODE_PRIVATE);
 
+        int id = cache.getInt("id", 0);
         String nome = cache.getString("nome", null);
         String cidade = cache.getString("cidade", null);
         String curso = cache.getString("curso", null);
@@ -112,6 +118,30 @@ public class TelaPerfil extends AppCompatActivity {
 
             String novoNome = view.edtNome.getText().toString().trim();
             String novaCidade = view.edtCidade.getText().toString().trim();
+
+            atualiza.cadastra(id, new BodyAtualiza(novoNome, novaCidade)).enqueue(new Callback<ResponseCadastro>() {
+                @Override
+                public void onResponse(Call<ResponseCadastro> call, Response<ResponseCadastro> response) {
+
+                    if (response.isSuccessful()) {
+
+
+
+                    } else {
+
+                        Log.e("ERROR", "Error: " + response.code());
+
+                    }
+
+                }
+
+                @Override
+                public void onFailure(Call<ResponseCadastro> call, Throwable throwable) {
+
+                    Log.e("ERROR", "Error: "  + throwable.getMessage());
+
+                }
+            });
 
         });
 
