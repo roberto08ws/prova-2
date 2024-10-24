@@ -20,9 +20,11 @@
 
         <ImageView
             android:id="@+id/imgFoto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_icon"
             android:layout_marginStart="10dp"
+            android:padding="5dp"
             app:srcCompat="@drawable/avatar_placeholder" />
 
         <TextView

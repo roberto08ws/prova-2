@@ -93,11 +93,14 @@
             app:layout_constraintVertical_bias="0.075"
             app:srcCompat="@drawable/logo" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnPerfil"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Meu Perfil"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:background="@drawable/shape_btn2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
@@ -105,11 +108,14 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView8"
             app:layout_constraintVertical_bias="0.069" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnRanking"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Ranking"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_btn1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
@@ -117,11 +123,14 @@
             app:layout_constraintTop_toBottomOf="@+id/btnPerfil"
             app:layout_constraintVertical_bias="0.0" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnDisciplinas"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Disciplinas"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:background="@drawable/shape_btn2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -129,11 +138,16 @@
             app:layout_constraintTop_toBottomOf="@+id/btnRanking"
             app:layout_constraintVertical_bias="0.0" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLogout"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:text="Log out"
+            android:drawableLeft="@drawable/log_out"
+            android:paddingStart="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_btn"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

@@ -79,6 +79,8 @@ public class AdapterList extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         }
 
+        return null;
+
     }
 
 }
