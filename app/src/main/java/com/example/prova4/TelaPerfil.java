@@ -3,6 +3,9 @@ package com.example.prova4;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +31,12 @@ public class TelaPerfil extends AppCompatActivity {
             return insets;
         });
 
+        Animation animation2 = new AlphaAnimation(1, 0);
+        animation2.setDuration(4000);
+
+        view.viewHarmonico.setAnimation(animation2);
+        view.viewHarmonico.setVisibility(View.GONE);
+
         SharedPreferences cache = getSharedPreferences("cadastro", MODE_PRIVATE);
 
         String nome = cache.getString("nome", null);
@@ -39,6 +48,25 @@ public class TelaPerfil extends AppCompatActivity {
         view.edtCurso.setText(curso);
 
         view.edtCurso.setEnabled(false);
+
+        view.imgMenu.setOnClickListener(e -> {
+
+            view.imgMenu.setEnabled(false);
+            view.viewFundo.setEnabled(true);
+
+            Animation animation = new AlphaAnimation(0, 1);
+            animation.setDuration(400);
+
+            view.viewFundo.setAnimation(animation);
+            view.viewFundo.setVisibility(View.VISIBLE);
+
+
+
+        });
+
+        view.viewMenu.setOnClickListener(e -> {
+
+        });
 
     }
 }
