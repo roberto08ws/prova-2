@@ -11,12 +11,17 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.prova4.databinding.ActivityMainBinding;
 
+import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.GET;
 
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding view;
+    private String[] cursos;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Retrofit retrofit = new Retrofit.Builder().baseUrl("http://10.0.2.2:3000").addConverterFactory(GsonConverterFactory.create()).build();
+
+
 
     }
 }
