@@ -11,6 +11,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.prova4.databinding.ActivityMainBinding;
 
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -21,7 +23,12 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding view;
     private String[] cursos;
 
+    private interface Lista {
 
+        @GET("/cursos")
+        Call<List<Cursos>> lista();
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
