@@ -1,6 +1,7 @@
 package com.example.prova4;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -146,6 +147,16 @@ public class MainActivity extends AppCompatActivity {
                     public void onResponse(Call<ResponseCadastro> call, Response<ResponseCadastro> response) {
 
                         if (response.isSuccessful()) {
+
+                            Usuarios usuario = response.body().getAluno();
+
+                            SharedPreferences.Editor editor = getSharedPreferences("cadastro", MODE_PRIVATE).edit();
+
+                            editor.putInt("id", usuario.getId());
+                            editor.putString("nome", usuario.getNome_completo());
+                            editor.putString("cidade", usuario.getCidade());
+                            editor.putString("curso", usuario.getCurso());
+                            editor.apply();
 
 
 
