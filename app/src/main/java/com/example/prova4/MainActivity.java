@@ -125,6 +125,10 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(this, "Campos faltantes: " + faltantes, Toast.LENGTH_SHORT).show();
 
+            } else {
+
+
+
             }
 
         });
