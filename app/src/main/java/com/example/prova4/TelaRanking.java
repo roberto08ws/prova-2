@@ -80,6 +80,8 @@ public class TelaRanking extends AppCompatActivity {
                 if (response.isSuccessful()) {
 
                     list = response.body();
+                    AdapterList adapterList = new AdapterList(list, TelaRanking.this);
+                    view.recyclerView.setAdapter(adapterList);
 
 
                 }
